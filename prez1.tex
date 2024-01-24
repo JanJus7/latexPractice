@@ -4,6 +4,8 @@
 \usepackage{lipsum}
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage[backend=biber, style=numeric]{biblatex}
+\addbibresource{data.bib}
 
 
 \title{dokument  \LaTeX}
@@ -101,13 +103,29 @@
     \subsection{\underline{Nulla Ac Nisl}}
     \lipsum[20-22] \\
 
+\newpage
+
 \section{Podsumowanie}
 Użyłem Rysunku \ref{img:liczbapi}, Rysunku \ref{img:a320nairportl}, Rysunku \ref{img:a320nairportr}, Rysunku \ref{img:a320n} i Tabeli \ref{tab:tabela}.
+
+
 
 \section{Bibliografia}
 1.  https://pl.wikipedia.org/wiki/Matematyka
 \newline
 2.  https://pl.wikipedia.org/wiki/Pi
+\newline
+Cytowanie artykułów \cite{art1,art2}\newline
+Cytowanie książki\cite{book1}\newline
+Cytowanie referatu na konferencji\cite{conf1}\newline
+Cytowanie nieopublikowanej pozycji\cite{unpub1}\newline
+Cytowanie instrukcji obsługi\cite{manual1}
+
+
+
+
+
+
 
 
 \end{document}
