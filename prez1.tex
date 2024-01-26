@@ -5,7 +5,9 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage[backend=biber, style=numeric]{biblatex}
-\addbibresource{data.bib}
+\bibliography{data}
+
+
 
 
 \title{dokument  \LaTeX}
@@ -115,14 +117,16 @@ Użyłem Rysunku \ref{img:liczbapi}, Rysunku \ref{img:a320nairportl}, Rysunku \r
 \newline
 2.  https://pl.wikipedia.org/wiki/Pi
 \newline
-Cytowanie artykułów \cite{art1,art2}\newline
-Cytowanie książki\cite{book1}\newline
-Cytowanie referatu na konferencji\cite{conf1}\newline
-Cytowanie nieopublikowanej pozycji\cite{unpub1}\newline
-Cytowanie instrukcji obsługi\cite{manual1}
+
+\cite{art1, art2, book1, conf1, unpub1, manual1}
+\nocite{*}
+\printbibliography
 
 
 
+
+
+\printbibliography
 
 
 
